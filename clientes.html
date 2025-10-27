@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Clientes</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="page-wrapper">
+    <aside class="sidebar">
+      <div class="sidebar-content">
+        <img src="icons/logo.png" alt="Logo Aesthetic Clinic" class="logo" />
+        <img src="icons/menu.png" alt="Menu de opções" class="menu-options" />
+      </div>
+    </aside>
+
+    <main class="page-content">
+      <h1>Cadastrar Cliente</h1>
+      <div class="page-columns">
+        <form class="form-block">
+          <label>Nome</label>
+          <input type="text" placeholder="Nome completo" />
+
+          <label>Telefone</label>
+          <input type="tel" placeholder="(XX) XXXXX-XXXX" />
+
+          <label>E-mail</label>
+          <input type="email" placeholder="email@exemplo.com" />
+
+          <label>Histórico</label>
+          <textarea placeholder="Observações sobre atendimentos anteriores"></textarea>
+
+          <button type="submit">Salvar Cliente</button>
+        </form>
+
+        <section class="list-block">
+          <h2>Lista de Clientes</h2>
+          <p>Aqui será exibida a lista de clientes cadastrados.</p>
+        </section>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

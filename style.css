@@ -1,0 +1,241 @@
+/* === BASE GLOBAL === */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #FFF0F5; /* Rosa Pálido */
+  color: #8B6C2E; /* Marrom Dourado */
+}
+
+a {
+  text-decoration: none;
+  color: #8B6C2E;
+}
+
+/* === SIDEBAR (index.html) === */
+.sidebar {
+  width: 260px;
+  height: 100vh;
+  background-color: #FADADD; /* Rosa Claro */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 2px 0 8px rgba(0,0,0,0.05);
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.sidebar-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  height: 100%;
+  gap: 60px;
+  padding-top: 20px;
+}
+
+.logo {
+  max-width: 180px;
+  height: auto;
+}
+
+.menu-options {
+  max-width: 130px;
+  height: auto;
+}
+
+/* === CONTEÚDO PRINCIPAL (index.html) === */
+.page-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-left: 260px;
+}
+
+.main-content {
+  padding: 10px 20px 60px 20px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.top-bar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.top-bar h2 {
+  font-size: 2rem;
+  color: #D4AF37; /* Dourado Metálico */
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+/* === GRID DE CARDS (index.html) === */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.card {
+  background-color: #FFFFFF;
+  border-radius: 16px;
+  padding: 30px;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.card:hover {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  transform: translateY(-5px);
+  border: 2px solid #D4AF37;
+}
+
+.card img {
+  width: 64px;
+  height: 64px;
+  margin-bottom: 12px;
+}
+
+.card h3 {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #D4AF37;
+}
+
+/* === RODAPÉ (index.html) === */
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 260px;
+  width: calc(100% - 260px);
+  height: 32px;
+  background-color: #FADADD;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  padding: 0 16px;
+  font-size: 0.75rem;
+  color: #8B6C2E;
+  z-index: 10;
+}
+
+.footer span {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.footer img {
+  width: 16px;
+  height: 16px;
+}
+
+/* === PÁGINAS INTERNAS: AGENDA, CLIENTES, ESTOQUE === */
+.page-content {
+  padding: 20px 40px 40px 40px; /* top, right, bottom, left */
+  margin-left: auto;
+  max-width: 1000px;
+  margin-right: auto;
+  box-sizing: border-box;
+  background-color: #FFF0F5;
+  min-height: 100vh;
+}
+
+.page-content h1 {
+  margin-top: 30px;
+  font-size: 2rem;
+  color: #D4AF37;
+  margin-bottom: 60px;
+  text-align: center; /* ← Essa linha centraliza o texto */
+}
+
+/* === LAYOUT LADO A LADO SIMPLIFICADO === */
+.page-columns {
+  display: flex;
+  gap: 60px;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+.form-block {
+  flex: 1;
+  min-width: 300px;
+  background-color: #FFFFFF;
+  border: 2px solid #D4AF37;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 40px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.calendar-block,
+.list-block {
+  flex: 1;
+  min-width: 300px;
+  background-color: #FFFFFF;
+  border: 2px solid #D4AF37;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 40px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+/* === FORMULÁRIOS === */
+.form-block label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 500;
+  color: #8B6C2E;
+}
+
+.form-block input,
+.form-block textarea,
+.form-block select {
+  width: 100%;
+  padding: 10px 14px;
+  margin-bottom: 16px;
+  border: 1px solid #D4AF37;
+  border-radius: 8px;
+  background-color: #FFF0F5;
+  font-size: 0.95rem;
+  color: #8B6C2E;
+  box-sizing: border-box;
+}
+
+.form-block button {
+  background-color: #D4AF37;
+  color: #FFFFFF;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.form-block button:hover {
+  background-color: #8B6C2E;
+}
+
+/* === BLOCOS DE EXIBIÇÃO === */
+.calendar-block h2,
+.list-block h2 {
+  font-size: 1.5rem;
+  color: #D4AF37;
+  margin-bottom: 12px;
+}
+
+.calendar-block p,
+.list-block p {
+  color: #8B6C2E;
+  font-size: 0.95rem;
+}
+
+
+

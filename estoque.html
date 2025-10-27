@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Estoque</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="page-wrapper">
+    <aside class="sidebar">
+      <div class="sidebar-content">
+        <img src="icons/logo.png" alt="Logo Aesthetic Clinic" class="logo" />
+        <img src="icons/menu.png" alt="Menu de opções" class="menu-options" />
+      </div>
+    </aside>
+
+    <main class="page-content">
+      <h1>Controle de Estoque</h1>
+      <div class="page-columns">
+        <form class="form-block">
+          <label>Produto</label>
+          <input type="text" placeholder="Nome do produto" />
+
+          <label>Categoria</label>
+          <input type="text" placeholder="Ex: Cremes, Equipamentos" />
+
+          <label>Quantidade</label>
+          <input type="number" min="0" />
+
+          <label>Validade</label>
+          <input type="date" />
+
+          <button type="submit">Adicionar ao Estoque</button>
+        </form>
+
+        <section class="list-block">
+          <h2>Produtos em Estoque</h2>
+          <p>Aqui será exibida a lista de produtos cadastrados.</p>
+        </section>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
